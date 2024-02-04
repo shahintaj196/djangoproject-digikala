@@ -43,5 +43,11 @@ class Order(models.Model):
     date=models.DateTimeField(default= datetime.datetime.today())
     status= models.BooleanField(default=False)
         
+        
+        
+  
+    
+    
+    
     def __str__(self):
         return self.name

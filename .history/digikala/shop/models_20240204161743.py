@@ -25,7 +25,7 @@ class Product(models.Model):
     name = models.CharField(max_length = 40 )
     description = models.CharField(max_length=500, default='', blank=True,null=True)
     price=models.DecimalField(default=0, max_digits=12, decimal_places=2)
-    Category=models.ForeignKey(Category, on_delete=models.CASCADE, default = 1)
+    Category=models.ForeignKey(Category, on_delete=models.CASCADE, default=1)
     picture = models.ImageField(upload_to='upload/product/')
     
     
@@ -43,5 +43,11 @@ class Order(models.Model):
     date=models.DateTimeField(default= datetime.datetime.today())
     status= models.BooleanField(default=False)
         
+        
+        
+  
+    
+    
+    
     def __str__(self):
         return self.name

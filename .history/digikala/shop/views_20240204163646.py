@@ -5,4 +5,4 @@ from django.shortcuts import render, HttpResponse
 
 def helloworld(request):
     # return HttpResponse('<h1>به فروشگاه من خوش آمدید<h1/>')
-    return render(request, 'index.html')
+    return render(request,"index.htm'")
