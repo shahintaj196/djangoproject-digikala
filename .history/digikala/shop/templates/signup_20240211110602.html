@@ -1,0 +1,33 @@
+
+
+{% extends "base.html" %}
+
+{% block content%}
+
+<header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">ثبت نام کنید</h1><br>
+            <p class="lead fw-normal text-white-50 mb-0">شاینا</p>
+        </div>
+    </div>
+</header>
+<br/>
+<br/>
+
+<center>
+
+<form method="POST" action="{% url 'signup' %}">
+    {% csrf_token %}
+   
+
+    <button type="submit" class="btn btn-primary">ثبت نام</button>
+</form>
+
+  <center/>
+
+
+<br/>
+
+
+{% endblock %}
